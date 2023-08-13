@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-10T17:44:23 IST" name="Default suite" finished-at="2023-08-10T17:44:24 IST" duration-ms="650">
+    <groups>
+    </groups>
+    <test started-at="2023-08-10T17:44:23 IST" name="Default test" finished-at="2023-08-10T17:44:24 IST" duration-ms="650">
+      <class name="BaseMethod.ApplicationOpen">
+        <test-method is-config="true" signature="configurationForAppium()[pri:0, instance:BaseMethod.ApplicationOpen@1f2586d6]" started-at="2023-08-10T17:44:23 IST" name="configurationForAppium" finished-at="2023-08-10T17:44:24 IST" duration-ms="612" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find 'adb.exe' in ["C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\platform-tools\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\emulator\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\cmdline-tools\\latest\\bin\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\tools\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\tools\\bin\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\adb.exe"]. Do you have Android Build Tools installed at 'C:\Users\gokul\AppData\Local\Android\Sdk\tools\bin'? 
+Host info: host: 'GOKUL', ip: '192.168.1.14'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity, appium:appPackage=com.google.android.youtube, appium:automationName=UIAutomator2, appium:deviceName=emulator-5554, appium:newCommandTimeout=100000, appium:noReset=true, platformName=ANDROID, appium:platformVersion=14}], desiredCapabilities=Capabilities {appActivity: com.google.android.apps.you..., appPackage: com.google.android.youtube, automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 100000, noReset: true, platformName: ANDROID, platformVersion: 14}}]
+Capabilities {appActivity: com.google.android.apps.you..., appPackage: com.google.android.youtube, automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 100000, noReset: true, platformName: ANDROID, platformVersion: 14}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find 'adb.exe' in ["C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\platform-tools\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\emulator\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\cmdline-tools\\latest\\bin\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\tools\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\tools\\bin\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\adb.exe"]. Do you have Android Build Tools installed at 'C:\Users\gokul\AppData\Local\Android\Sdk\tools\bin'? 
+Host info: host: 'GOKUL', ip: '192.168.1.14'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity, appium:appPackage=com.google.android.youtube, appium:automationName=UIAutomator2, appium:deviceName=emulator-5554, appium:newCommandTimeout=100000, appium:noReset=true, platformName=ANDROID, appium:platformVersion=14}], desiredCapabilities=Capabilities {appActivity: com.google.android.apps.you..., appPackage: com.google.android.youtube, automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 100000, noReset: true, platformName: ANDROID, platformVersion: 14}}]
+Capabilities {appActivity: com.google.android.apps.you..., appPackage: com.google.android.youtube, automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 100000, noReset: true, platformName: ANDROID, platformVersion: 14}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at BaseMethod.AndroidBaseClass.configurationForAppium(AndroidBaseClass.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configurationForAppium -->
+        <test-method signature="calculator()[pri:0, instance:BaseMethod.ApplicationOpen@1f2586d6]" started-at="2023-08-10T17:44:24 IST" name="calculator" finished-at="2023-08-10T17:44:24 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find 'adb.exe' in ["C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\platform-tools\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\emulator\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\cmdline-tools\\latest\\bin\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\tools\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\tools\\bin\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\adb.exe"]. Do you have Android Build Tools installed at 'C:\Users\gokul\AppData\Local\Android\Sdk\tools\bin'? 
+Host info: host: 'GOKUL', ip: '192.168.1.14'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity, appium:appPackage=com.google.android.youtube, appium:automationName=UIAutomator2, appium:deviceName=emulator-5554, appium:newCommandTimeout=100000, appium:noReset=true, platformName=ANDROID, appium:platformVersion=14}], desiredCapabilities=Capabilities {appActivity: com.google.android.apps.you..., appPackage: com.google.android.youtube, automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 100000, noReset: true, platformName: ANDROID, platformVersion: 14}}]
+Capabilities {appActivity: com.google.android.apps.you..., appPackage: com.google.android.youtube, automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 100000, noReset: true, platformName: ANDROID, platformVersion: 14}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find 'adb.exe' in ["C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\platform-tools\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\emulator\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\cmdline-tools\\latest\\bin\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\tools\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\tools\\bin\\adb.exe","C:\\Users\\gokul\\AppData\\Local\\Android\\Sdk\\tools\\bin\\adb.exe"]. Do you have Android Build Tools installed at 'C:\Users\gokul\AppData\Local\Android\Sdk\tools\bin'? 
+Host info: host: 'GOKUL', ip: '192.168.1.14'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity, appium:appPackage=com.google.android.youtube, appium:automationName=UIAutomator2, appium:deviceName=emulator-5554, appium:newCommandTimeout=100000, appium:noReset=true, platformName=ANDROID, appium:platformVersion=14}], desiredCapabilities=Capabilities {appActivity: com.google.android.apps.you..., appPackage: com.google.android.youtube, automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 100000, noReset: true, platformName: ANDROID, platformVersion: 14}}]
+Capabilities {appActivity: com.google.android.apps.you..., appPackage: com.google.android.youtube, automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 100000, noReset: true, platformName: ANDROID, platformVersion: 14}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at BaseMethod.AndroidBaseClass.configurationForAppium(AndroidBaseClass.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculator -->
+      </class> <!-- BaseMethod.ApplicationOpen -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
